@@ -11,12 +11,12 @@ input.onfocus = function () {
 	icon.style.display = 'none'
 	buttom.style.display = 'none'
 	input.style.left = '7px'
-	input.style.width = '350px'
+	input.style.width = '340px'
 }
 input.onblur = function () {
 	icon.style.display = 'block'
 	buttom.style.display = 'block'
-	input.style.left = '143px'
+	input.style.left = '137px'
 	input.style.width = '169px'
 }
 class item{
@@ -71,6 +71,11 @@ document.body.onclick = function (e) {
 			list.splice(e.target.dataset.index,1)
 			refresh()
 		}
+		if(e.target.className == 'buttom' && input.value != '') {
+			list.push(new item(input.value))
+			input.value = ''
+			refresh()
+		}
 	}
 }
 
@@ -79,6 +84,11 @@ document.body.addEventListener("touchstart",function(e){
 	if(navigator.userAgent.indexOf("iPhone")!=-1 || navigator.userAgent.indexOf("Android")!=-1 || navigator.userAgent.indexOf("iPad")!=-1){
 		if(e.target.className == 'delete') {
 			list.splice(e.target.dataset.index,1)
+			refresh()
+		}
+		if(e.target.className == 'buttom' && input.value != '') {
+			list.push(new item(input.value))
+			input.value = ''
 			refresh()
 		}
 	}

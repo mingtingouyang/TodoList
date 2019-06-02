@@ -15,7 +15,7 @@
 	width: 123px;
 	font-size: 30px;
 	line-height: 50px;
-	margin: 0 10px;
+	margin: 0 7px;
 	color: white;
 	position: absolute;
 	left: 0;
@@ -34,7 +34,7 @@
 	color: white;
 	outline: none;
 	position: absolute;
-	left: 143px;
+	left: 137px;
 	top: 0;
 	transition: all 1s;
 }
