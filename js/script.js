@@ -64,9 +64,22 @@ doneItem.onchange = function(e) {
 	refresh()
 }
 
+//pc
 document.body.onclick = function (e) {
-	if(e.target.className == 'delete') {
-		list.splice(e.target.dataset.index,1)
-		refresh()
+	if(navigator.userAgent.indexOf("iPhone")==-1 && navigator.userAgent.indexOf("Android")==-1 && navigator.userAgent.indexOf("iPad")==-1){
+		if(e.target.className == 'delete') {
+			list.splice(e.target.dataset.index,1)
+			refresh()
+		}
 	}
 }
+
+//mobile
+document.body.addEventListener("touchstart",function(e){
+	if(navigator.userAgent.indexOf("iPhone")!=-1 || navigator.userAgent.indexOf("Android")!=-1 || navigator.userAgent.indexOf("iPad")!=-1){
+		if(e.target.className == 'delete') {
+			list.splice(e.target.dataset.index,1)
+			refresh()
+		}
+	}
+})
