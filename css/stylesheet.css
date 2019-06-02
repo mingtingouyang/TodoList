@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .head{
-	width: 100%;
+	width: 375px;
 	height: 50px;
 	background-color: rgba(219, 76, 63,0.98);
 	display: flex;
