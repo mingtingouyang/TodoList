@@ -86,6 +86,10 @@
 	width: 310px;
 	border-bottom: 1px solid #f0f0f0;
 	line-height: 25px;
+	/*下面三步用于使超长文本变成省略号*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .item .delete{
 	width: 25px;
