@@ -104,6 +104,9 @@
 .doneList .item{
 	opacity: 0.6;
 }
+.doneList .content{
+	text-decoration: line-through;
+}
 .foot{
 	margin: 40px 50px 20px 50px;
 	padding-top: 10px;
