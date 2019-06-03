@@ -11,7 +11,7 @@ input.onfocus = function () {
 	icon.style.display = 'none'
 	buttom.style.display = 'none'
 	input.style.left = '7px'
-	input.style.width = '340px'
+	input.style.width = '342px'
 }
 input.onblur = function () {
 	icon.style.display = 'block'
